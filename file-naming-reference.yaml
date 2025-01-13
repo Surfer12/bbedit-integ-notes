@@ -1,0 +1,116 @@
+%TAG !tag! tag:custom.tags:
+---
+file_renaming_reference:
+  project: "Code Sentinel Documentation"
+  date_created: "2024-01-10"
+  purpose: >-
+    This configuration file documents the rationale behind file renaming decisions,
+    making it easier to understand the organization of project documentation and
+    maintain consistency in future additions.
+
+  renamed_files:
+    yaml_specification:
+      old_name: "untitled text 2.txt"
+      new_name: "code-sentinel-yaml-spec.txt"
+      content_type: "YAML specification"
+      rationale: "Contains the core YAML specification for the Code Sentinel project structure"
+      key_content: "Project definition, goals, and architectural components in YAML format"
+
+    setup_guide:
+      old_name: "untitled text 3.txt"
+      new_name: "code-sentinel-setup-guide.txt"
+      content_type: "Setup instructions"
+      rationale: "Provides step-by-step guide for setting up Code Sentinel"
+      key_content: "Project initialization, Git setup, virtual environment configuration"
+
+    computer_use_demo:
+      old_name: "untitled text 4.txt"
+      new_name: "computer-use-demo-overview.txt"
+      content_type: "Project overview"
+      rationale: "Describes the computer-use-demo project and its core concepts"
+      key_content: "Agentic sampling loop, tools, monitoring system explanation"
+
+    codebase_integration:
+      old_name: "untitled text 5.txt"
+      new_name: "code-sentinel-codebase-integration.txt"
+      content_type: "Integration documentation"
+      rationale: "Details how Code Sentinel integrates with @Codebase"
+      key_content: "Integration points, AST analysis, query engine details"
+
+    codebase_merge:
+      old_name: "untitled text 6.txt"
+      new_name: "code-sentinel-codebase-merge.txt"
+      content_type: "Merge strategy"
+      rationale: "Explains the conceptual merge between Code Sentinel and @Codebase"
+      key_content: "Merge approach, component integration, technical considerations"
+
+    anthropic_integration:
+      old_name: "untitled text 7.txt"
+      new_name: "code-sentinel-anthropic-integration.txt"
+      content_type: "Integration documentation"
+      rationale: "Covers integration with Anthropic Computer Use Demo"
+      key_content: "Integration points with Claude, tools interaction, security analysis"
+
+    mojo_integration:
+      old_name: "untitled text 8.txt"
+      new_name: "code-sentinel-mojo-integration.txt"
+      content_type: "Technical implementation"
+      rationale: "Contains Mojo code examples and integration patterns"
+      key_content: "Mojo code examples, architectural patterns, performance optimization"
+
+    mojo_brainstorm:
+      old_name: "untitled text 9.txt"
+      new_name: "code-sentinel-mojo-brainstorm.txt"
+      content_type: "Design exploration"
+      rationale: "Brainstorming document for Mojo implementations"
+      key_content: "Core features exploration, architectural patterns, optimization ideas"
+
+    mojo_deep_dive:
+      old_name: "untitled text 10.txt"
+      new_name: "code-sentinel-mojo-deep-dive.txt"
+      content_type: "Technical deep dive"
+      rationale: "Comprehensive analysis of Mojo implementation options"
+      key_content: "Detailed Mojo features, implementation approaches, security considerations"
+
+    chat_worksheets:
+      worksheet_1:
+        old_name: "untitled chat worksheet.bbaiworksheet"
+        new_name: "code-sentinel-chat-1.bbaiworksheet"
+        content_type: "Chat log"
+        rationale: "First chat session discussing Code Sentinel"
+        key_content: "Initial discussion and planning"
+
+      worksheet_2:
+        old_name: "untitled chat worksheet 2.bbaiworksheet"
+        new_name: "code-sentinel-chat-2.bbaiworksheet"
+        content_type: "Chat log"
+        rationale: "Second chat session discussing Code Sentinel"
+        key_content: "Follow-up discussion and refinements"
+
+  naming_conventions:
+    prefix_usage:
+      - prefix: "code-sentinel-"
+        purpose: "Identifies files directly related to the Code Sentinel project"
+      - prefix: "computer-use-demo-"
+        purpose: "Identifies files related to the Computer Use Demo integration"
+
+    content_indicators:
+      - suffix: "-spec"
+        meaning: "Contains specifications or formal definitions"
+      - suffix: "-guide"
+        meaning: "Contains instructional or setup information"
+      - suffix: "-integration"
+        meaning: "Details integration with other systems"
+      - suffix: "-overview"
+        meaning: "Provides high-level project information"
+      - suffix: "-brainstorm"
+        meaning: "Contains exploratory ideas and planning"
+      - suffix: "-deep-dive"
+        meaning: "Contains detailed technical analysis"
+
+  maintenance_guidelines:
+    - "Keep prefixes consistent for related content"
+    - "Use descriptive suffixes that indicate content type"
+    - "Include the target technology in the name when relevant (e.g., mojo, anthropic)"
+    - "Maintain clear separation between different integration aspects"
+    - "Use hyphens for word separation in filenames"

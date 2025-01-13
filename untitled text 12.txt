@@ -1,0 +1,16 @@
+# monitoring.py
+from tools.LoggerTool import LoggerTool
+from datetime import datetime
+
+class Monitoring:
+    def __init__(self, log_file: str):
+        self.logger = LoggerTool(log_file=Path(log_file))
+
+    def track_analysis_invocation(self, tool_name: str):
+        self.logger.log_info(f"{tool_name} invoked at {datetime.now()}.")
+
+    def track_vulnerabilities_found(self, count: int):
+        self.logger.log_info(f"Vulnerabilities found: {count} at {datetime.now()}.")
+
+    def track_runtime(self, duration: float):
+        self.logger.log_info(f"Analysis runtime: {duration} seconds at {datetime.now()}.")
